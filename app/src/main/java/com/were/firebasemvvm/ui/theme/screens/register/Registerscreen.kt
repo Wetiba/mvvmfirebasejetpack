@@ -25,9 +25,16 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import com.alvinfire.firebase.data.AuthViewModel
-import com.alvinfire.firebase.navigation.ROUTE_LOGIN
-import com.alvinfire.firebase.ui.theme.*
+import com.were.firebasemvvm.data.AuthViewModel
+import com.were.firebasemvvm.navigation.ROUTE_LOGIN
+import com.were.firebasemvvm.ui.theme.emeraldGreen
+import com.were.firebasemvvm.ui.theme.icebergBlue
+import com.were.firebasemvvm.ui.theme.lightBlue
+import com.were.firebasemvvm.ui.theme.limeGreen
+import com.were.firebasemvvm.ui.theme.orangeRedDeep
+import com.were.firebasemvvm.ui.theme.orchid
+import com.were.firebasemvvm.ui.theme.skyBlue
+
 
 @Composable
 fun RegisterScreen(navController: NavHostController) {

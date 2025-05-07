@@ -28,8 +28,15 @@ import androidx.compose.material3.CardDefaults
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import coil3.compose.rememberAsyncImagePainter
+import com.were.firebasemvvm.data.productviewmodel
+import com.were.firebasemvvm.models.Upload
+import com.were.firebasemvvm.navigation.ROUTE_UPDATE_PRODUCT
 import com.were.firebasemvvm.ui.theme.blue
 import com.were.firebasemvvm.ui.theme.blue1
+import com.were.firebasemvvm.ui.theme.green1
+import com.were.firebasemvvm.ui.theme.newwhite
+import com.were.firebasemvvm.ui.theme.red
 
 
 @Composable

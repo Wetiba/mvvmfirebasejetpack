@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "526453312109",
+    "project_id": "fraciah-82e0e",
+    "storage_bucket": "fraciah-82e0e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526453312109:android:98f94169f72aadb64d8d64",
+        "android_client_info": {
+          "package_name": "com.were.firebasemvvm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA32g2n2Oyh40bHn2uIQMDiAvUrAXgtb64"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

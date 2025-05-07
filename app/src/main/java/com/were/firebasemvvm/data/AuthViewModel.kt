@@ -4,6 +4,9 @@ package com.were.firebasemvvm.data
 import android.content.Context
 import android.widget.Toast
 import androidx.navigation.NavHostController
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
+import com.were.firebasemvvm.models.User
 import com.were.firebasemvvm.navigation.ROUTE_HOME
 import com.were.firebasemvvm.navigation.ROUTE_LOGIN
 import com.were.firebasemvvm.navigation.ROUTE_REGISTER
@@ -36,7 +39,7 @@ class AuthViewModel(var navController: NavHostController, var context: Context) 
             mAuth.createUserWithEmailAndPassword(email, pass)
                 .addOnCompleteListener {
                     if (it.isSuccessful) {
-                        val userdata = User(email, pass, mAuth.currentUser!!.uid)
+                        val userdata = User.User(email, pass, mAuth.currentUser!!.uid)
                         val regRef = FirebaseDatabase.getInstance().getReference()
                             .child("Users/" + mAuth.currentUser!!.uid)
                         regRef.setValue(userdata).addOnCompleteListener {
